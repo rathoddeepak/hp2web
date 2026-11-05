@@ -1,0 +1,303 @@
+{
+ "description": "NFSHP2 v242 imports missing from nfsu2-web KNOWN; stdcall slot counts from Win32 SDK headers",
+ "entries": [
+  {
+   "name": "SHGetSpecialFolderPathA",
+   "nargs": 4
+  },
+  {
+   "name": "ImmAssociateContext",
+   "nargs": 2
+  },
+  {
+   "name": "ImmCreateContext",
+   "nargs": 0
+  },
+  {
+   "name": "ImmDestroyContext",
+   "nargs": 1
+  },
+  {
+   "name": "ImmNotifyIME",
+   "nargs": 4
+  },
+  {
+   "name": "ImmReleaseContext",
+   "nargs": 2
+  },
+  {
+   "name": "ImmGetOpenStatus",
+   "nargs": 1
+  },
+  {
+   "name": "ImmGetContext",
+   "nargs": 1
+  },
+  {
+   "name": "ImmGetCompositionStringA",
+   "nargs": 4
+  },
+  {
+   "name": "ImmGetCompositionStringW",
+   "nargs": 4
+  },
+  {
+   "name": "ImmSimulateHotKey",
+   "nargs": 2
+  },
+  {
+   "name": "ImmGetProperty",
+   "nargs": 2
+  },
+  {
+   "name": "ImmGetConversionStatus",
+   "nargs": 3
+  },
+  {
+   "name": "ImmGetCandidateListA",
+   "nargs": 4
+  },
+  {
+   "name": "ImmSetOpenStatus",
+   "nargs": 2
+  },
+  {
+   "name": "ImmGetCandidateListW",
+   "nargs": 4
+  },
+  {
+   "name": "Direct3DCreate8",
+   "nargs": 1
+  },
+  {
+   "name": "FormatMessageW",
+   "nargs": 7
+  },
+  {
+   "name": "OpenMutexA",
+   "nargs": 3
+  },
+  {
+   "name": "FatalAppExitA",
+   "nargs": 2
+  },
+  {
+   "name": "OutputDebugStringW",
+   "nargs": 1
+  },
+  {
+   "name": "FormatMessageA",
+   "nargs": 7
+  },
+  {
+   "name": "GetVolumeInformationA",
+   "nargs": 8
+  },
+  {
+   "name": "GetLogicalDriveStringsA",
+   "nargs": 2
+  },
+  {
+   "name": "PeekConsoleInputA",
+   "nargs": 4
+  },
+  {
+   "name": "GetConsoleMode",
+   "nargs": 2
+  },
+  {
+   "name": "SetConsoleMode",
+   "nargs": 2
+  },
+  {
+   "name": "ReadConsoleInputA",
+   "nargs": 4
+  },
+  {
+   "name": "IsDBCSLeadByte",
+   "nargs": 1
+  },
+  {
+   "name": "GetNumberOfConsoleInputEvents",
+   "nargs": 2
+  },
+  {
+   "name": "WriteConsoleA",
+   "nargs": 5
+  },
+  {
+   "name": "ChangeDisplaySettingsA",
+   "nargs": 2
+  },
+  {
+   "name": "wsprintfW",
+   "nargs": 0
+  },
+  {
+   "name": "SetTimer",
+   "nargs": 4
+  },
+  {
+   "name": "CreateDialogParamA",
+   "nargs": 5
+  },
+  {
+   "name": "KillTimer",
+   "nargs": 2
+  },
+  {
+   "name": "SetDlgItemTextA",
+   "nargs": 3
+  },
+  {
+   "name": "GetDlgItemTextA",
+   "nargs": 4
+  },
+  {
+   "name": "GetDlgItem",
+   "nargs": 2
+  },
+  {
+   "name": "MessageBoxW",
+   "nargs": 4
+  },
+  {
+   "name": "MoveWindow",
+   "nargs": 6
+  },
+  {
+   "name": "SystemParametersInfoA",
+   "nargs": 4
+  },
+  {
+   "name": "SendNotifyMessageA",
+   "nargs": 4
+  },
+  {
+   "name": "RegisterClassA",
+   "nargs": 1
+  },
+  {
+   "name": "keybd_event",
+   "nargs": 4
+  },
+  {
+   "name": "CharUpperA",
+   "nargs": 1
+  },
+  {
+   "name": "BringWindowToTop",
+   "nargs": 1
+  },
+  {
+   "name": "GetClassLongA",
+   "nargs": 2
+  },
+  {
+   "name": "SetClassLongA",
+   "nargs": 3
+  },
+  {
+   "name": "AdjustWindowRectEx",
+   "nargs": 4
+  },
+  {
+   "name": "ClipCursor",
+   "nargs": 1
+  },
+  {
+   "name": "GetWindowDC",
+   "nargs": 1
+  },
+  {
+   "name": "ReleaseDC",
+   "nargs": 2
+  },
+  {
+   "name": "GetKeyNameTextA",
+   "nargs": 3
+  },
+  {
+   "name": "GetKeyState",
+   "nargs": 1
+  },
+  {
+   "name": "GetDoubleClickTime",
+   "nargs": 0
+  },
+  {
+   "name": "GetCaretBlinkTime",
+   "nargs": 0
+  },
+  {
+   "name": "CallNextHookEx",
+   "nargs": 4
+  },
+  {
+   "name": "SetWindowsHookExA",
+   "nargs": 4
+  },
+  {
+   "name": "UnhookWindowsHookEx",
+   "nargs": 1
+  },
+  {
+   "name": "GetKeyboardLayout",
+   "nargs": 1
+  },
+  {
+   "name": "SetDeviceGammaRamp",
+   "nargs": 2
+  },
+  {
+   "name": "GetDeviceGammaRamp",
+   "nargs": 2
+  },
+  {
+   "name": "mixerSetControlDetails",
+   "nargs": 3
+  },
+  {
+   "name": "mixerGetControlDetailsA",
+   "nargs": 3
+  },
+  {
+   "name": "mixerGetLineControlsA",
+   "nargs": 3
+  },
+  {
+   "name": "mixerGetLineInfoA",
+   "nargs": 3
+  },
+  {
+   "name": "mixerGetNumDevs",
+   "nargs": 0
+  },
+  {
+   "name": "mciSendStringA",
+   "nargs": 4
+  },
+  {
+   "name": "DirectInputCreateA",
+   "nargs": 4
+  },
+  {
+   "name": "__WSAFDIsSet",
+   "nargs": 2
+  },
+  {
+   "name": "gethostbyaddr",
+   "nargs": 3
+  },
+  {
+   "name": "dsound.dll#1",
+   "nargs": 3,
+   "note": "DirectSoundCreate"
+  },
+  {
+   "name": "dsound.dll#6",
+   "nargs": 3,
+   "note": "DirectSoundCaptureCreate (ordinal unverified; only caller 0x5f356b is unreachable)"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+3000ms tap ESCAPE
++3000ms tap RETURN
++3000ms tap ESCAPE
++3000ms tap RETURN
++4000ms tap RETURN
++4000ms tap RETURN

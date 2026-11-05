@@ -1,0 +1,92 @@
+[
+ {
+  "address": 5599104,
+  "address_hex": "0x00556F80",
+  "note": "runtime: window procedure (RegisterClassExA, address built at runtime)"
+ },
+ {
+  "address": 4418576,
+  "address_hex": "0x00436C10",
+  "note": "runtime: virtual destructor reached from sub_0053a7b0 cleanup"
+ },
+ {
+  "address": 4516000,
+  "address_hex": "0x0044E8A0",
+  "note": "runtime: indirect call from 0x58f41a (front end, after Enter on the title screen)"
+ },
+ {
+  "address": 6055764,
+  "address_hex": "0x005C6754",
+  "note": "runtime: unresolved indirect call (return 0x05fede0c)"
+ },
+ {
+  "address": 6055824,
+  "address_hex": "0x005C6790",
+  "note": "runtime: unresolved indirect call (return 0x178405d1)"
+ },
+ {
+  "address": 6669016,
+  "address_hex": "0x0065C2D8",
+  "note": "runtime: unresolved indirect call (return 0x00602021)"
+ },
+ {
+  "address": 4777664,
+  "address_hex": "0x0048E6C0",
+  "note": "runtime: unresolved indirect call (return 0x0059431a)"
+ },
+ {
+  "address": 5536864,
+  "address_hex": "0x00547C60",
+  "note": "runtime: unresolved indirect call (return 0x005c5310)"
+ },
+ {
+  "address": 5550128,
+  "address_hex": "0x0054B030",
+  "note": "runtime: unresolved indirect call (return 0x005c5310)"
+ },
+ {
+  "address": 5640016,
+  "address_hex": "0x00560F50",
+  "note": "runtime: unresolved indirect call (return 0x005c5310)"
+ },
+ {
+  "address": 5654400,
+  "address_hex": "0x00564780",
+  "note": "runtime: unresolved indirect call (return 0x005c5310)"
+ },
+ {
+  "address": 5709376,
+  "address_hex": "0x00571E40",
+  "note": "runtime: unresolved indirect call (return 0x005c5310)"
+ },
+ {
+  "address": 6055976,
+  "address_hex": "0x005C6828",
+  "note": "runtime: unresolved indirect call (return 0x05fede0e)"
+ },
+ {
+  "address": 6056180,
+  "address_hex": "0x005C68F4",
+  "note": "runtime: unresolved indirect call (return 0x05fede0e)"
+ },
+ {
+  "address": 4821216,
+  "address_hex": "0x004990E0",
+  "note": "runtime: unresolved indirect call (return 0x00591a4e)"
+ },
+ {
+  "address": 5706976,
+  "address_hex": "0x005714E0",
+  "note": "runtime: unresolved indirect call (return 0x00544dbe)"
+ },
+ {
+  "address": 4513408,
+  "address_hex": "0x0044DE80",
+  "note": "runtime: unresolved indirect call (return 0x004499a3)"
+ },
+ {
+  "address": 5459424,
+  "address_hex": "0x00534DE0",
+  "note": "runtime: unresolved indirect call (return 0x0053a751)"
+ }
+]

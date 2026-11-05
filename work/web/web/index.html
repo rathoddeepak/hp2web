@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0d0d0d">
+<title>NFS Hot Pursuit 2 | Browser Edition</title>
+<meta name="description" content="Need for Speed: Hot Pursuit 2.">
+<meta name="keywords" content="Need for Speed Hot Pursuit 2, NFSHP2">
+<meta name="application-name" content="NFS Hot Pursuit 2 | Browser Edition">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NFS Hot Pursuit 2 | Browser Edition">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="NFS Hot Pursuit 2 | Browser Edition">
+<meta property="og:description" content="Need for Speed: Hot Pursuit 2.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NFS Hot Pursuit 2 | Browser Edition">
+<meta name="twitter:description" content="Need for Speed: Hot Pursuit 2.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23171717'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='%23404038' stroke='%23c8f088' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "NFS Hot Pursuit 2 | Browser Edition",
+  "alternateName": ["Need for Speed: Hot Pursuit 2", "NFSHP2"],
+  "description": "Need for Speed: Hot Pursuit 2.",
+  "applicationCategory": "GameApplication"
+}
+</script>
+<script type="module" src="/main.js"></script>
+</head>
+<body data-phase="boot">
+
+<main class="app underground-menu" id="app">
+  <a class="skip-menu" href="#menu-content">Skip to content</a>
+  <header class="top">
+    <div class="top-row">
+      <h1 class="wordmark"><span class="wordmark-small">Need for Speed</span><span class="wordmark-name">Hot Pursuit 2</span></h1>
+    </div>
+    <div class="bar" id="progress" role="progressbar" aria-label="Game loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar-fill" id="progress-fill"></div></div>
+  </header>
+
+  <aside class="menu-rail">
+    <p class="eyebrow rail-caption">Main menu</p>
+    <nav class="screen-nav" aria-label="Main menu">
+      <button type="button" data-screen="play" aria-current="page" aria-controls="screen-play"><span class="nav-index">01</span><span>Play</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+      <button type="button" data-screen="options" aria-controls="screen-options"><span class="nav-index">02</span><span>Options</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+      <button type="button" data-screen="controls" aria-controls="screen-controls"><span class="nav-index">03</span><span>Controls</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+      <button type="button" data-screen="storage" aria-controls="screen-storage"><span class="nav-index">04</span><span>Game data</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+    </nav>
+  </aside>
+
+  <div class="menu-content" id="menu-content" tabindex="-1">
+    <div class="menu-screen" id="screen-play" data-menu-screen="play">
+      <section class="panel hero" aria-label="Launch Need for Speed: Hot Pursuit 2">
+      <p class="status" id="status" role="status">Loading</p>
+      <p class="status-sub" id="status-sub">Loading the game.</p>
+      <div class="row">
+        <button type="button" class="play" id="play" disabled>Launch game <kbd>Enter</kbd></button>
+        <button type="button" class="btn" id="retry" hidden>Retry</button>
+        <button type="button" class="btn" id="reload" hidden>Reload</button>
+        <button type="button" class="text-btn" id="log-btn" hidden>Download log</button>
+      </div>
+      <p class="msg" id="report" hidden>Download the log to help diagnose this problem.</p>
+      <p class="msg" id="newer" aria-live="polite" hidden></p>
+      <ul class="problems" id="problems" aria-live="polite"></ul>
+      <p class="msg warn" id="override" hidden></p>
+    </section>
+      <div class="screen-strip"><span><kbd>Enter</kbd> Start</span><span><kbd>F9</kbd> Menu while playing</span></div>
+    </div>
+
+    <div class="menu-screen" id="screen-options" data-menu-screen="options" hidden>
+      <section class="panel" id="settings" aria-labelledby="settings-title">
+      <h2 id="settings-title">Settings</h2>
+      <p class="hint" id="settings-note">Saved automatically in this browser. Changes apply at your next launch.</p>
+      <div id="settings-body"></div>
+      <details class="raw" id="settings-raw" hidden>
+        <summary>Edit settings.ini as text</summary>
+        <textarea id="settings-text" spellcheck="false" rows="20" wrap="off" aria-label="settings.ini"></textarea>
+        <div class="row">
+          <button type="button" class="btn" id="settings-text-save">Save file</button>
+          <span class="hint" id="settings-text-msg" role="status"></span>
+        </div>
+      </details>
+    </section>
+      <p class="screen-note">For transmission, difficulty and the music / effects mix, use Options inside the game.</p>
+    </div>
+
+    <div class="menu-screen" id="screen-controls" data-menu-screen="controls" hidden>
+      <section class="panel" id="controls" aria-labelledby="controls-title">
+        <h2 id="controls-title">Controls</h2>
+        <div id="keys">
+          <p class="hint">Use the settings below to change your driving keys. The game must use its default keyboard bindings.</p>
+          <dl class="keys"><div><dt><kbd>F10</kbd></dt><dd>Turn key remapping off or on while playing</dd></div><div><dt><kbd>F9</kbd></dt><dd>Open the game menu</dd></div><div><dt><kbd>Enter</kbd></dt><dd>Launch the game</dd></div></dl>
+          <p class="hint">Hold Escape to leave fullscreen.</p>
+        </div>
+        <div id="keyboard-controls"></div>
+        <div id="controller-settings"></div>
+      </section>
+    </div>
+
+    <div class="menu-screen" id="screen-storage" data-menu-screen="storage" hidden>
+      <section class="panel" id="game-data" aria-labelledby="game-data-title">
+      <h2 id="game-data-title">Game data on this PC</h2>
+      <p class="hint" id="cache-info">Counting…</p>
+      <div class="bar" id="data-bar" role="progressbar" aria-label="Game data preload" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden>
+        <div class="bar-fill"></div>
+      </div>
+      <div class="row">
+        <button type="button" class="btn" id="fetch-all" hidden>Preload the game data</button>
+        <button type="button" class="btn" id="clear-cache">Delete the game data on this PC</button>
+      </div>
+      <p class="msg" id="data-msg" role="status"></p>
+    </section>
+      <section class="panel" id="saves" aria-labelledby="saves-title">
+        <h2 id="saves-title">Save data</h2>
+        <ul class="profiles" id="profiles" aria-label="Profiles in this browser"></ul>
+        <p class="hint">Back up your game saves and settings in one ZIP file.</p>
+        <div class="row">
+          <button type="button" class="btn" id="export">Download backup</button>
+          <label class="btn file-btn">Restore backup<input type="file" id="import"></label>
+        </div>
+        <p class="msg" id="saves-msg" role="status"></p>
+        <p class="msg warn" id="storage-note" hidden></p>
+      </section>
+      <p class="screen-note">Game data is cached in this browser. Clearing browser site data can also remove your local settings and saves.</p>
+    </div>
+
+  </div>
+  <div hidden>
+<section class="panel" id="online" aria-labelledby="online-title" hidden>
+      <h2 id="online-title">Online</h2>
+      <p class="hint" id="online-note" hidden></p>
+      <div id="online-body"></div>
+    </section></div>
+  <footer class="foot"><p>Fan project · Not affiliated with Electronic Arts</p></footer>
+</main>
+
+
+<div class="stage" id="stage" hidden>
+  <div class="hud-fps" id="fps" hidden></div>
+  <div class="toast" id="toast" hidden></div>
+  <div class="toast away" id="away" role="status" hidden></div>
+  <div class="notices" id="notices" role="status" aria-live="polite"></div>
+</div>
+
+<div class="page-toast" id="page-toast" role="status" aria-live="polite"></div>
+
+<dialog class="dlg help" id="help" aria-labelledby="help-title">
+  <form method="dialog" class="dlg-head">
+    <h2 id="help-title">Controls</h2>
+    <button class="btn" value="close">Close</button>
+  </form>
+  <div id="help-body"></div>
+</dialog>
+
+<dialog class="dlg menu" id="menu" aria-labelledby="menu-title">
+  <h2 id="menu-title">Menu</h2>
+  <p class="hint">The game keeps running behind this menu.</p>
+  <p class="hint" id="menu-save"></p>
+  <div class="menu-actions">
+    <button type="button" class="btn selected" data-act="resume">Back to the game</button>
+    <button type="button" class="btn" data-act="fullscreen">Full screen</button>
+    <button type="button" class="btn" data-act="help">Controls</button>
+    <button type="button" class="btn" data-act="log">Download log</button>
+    <button type="button" class="btn danger" data-act="quit">Quit game</button>
+  </div>
+</dialog>
+
+<dialog class="dlg confirm" id="confirm" aria-labelledby="confirm-title">
+  <form method="dialog">
+    <h2 id="confirm-title"></h2>
+    <div id="confirm-body"></div>
+    <div class="row end">
+      <button class="btn" value="cancel" id="confirm-cancel" formnovalidate>Cancel</button>
+      <button class="btn selected" value="ok" id="confirm-ok"></button>
+    </div>
+  </form>
+</dialog>
+
+</body>
+</html>

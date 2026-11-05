@@ -1,0 +1,63 @@
+# ── Copyrighted retail game files (NEVER commit — DMCA) ──────────────────────
+work/data/
+profiles/*.sav
+**/NFSHP2.exe
+**/SPEED2.EXE
+
+# ── Downloaded toolchains / SDKs (re-downloadable, hundreds of MB) ────────────
+work/toolchain/
+.venv/
+**/node_modules/
+
+# ── Build artifacts & generated output ───────────────────────────────────────
+out/
+gen/
+work/objcache/
+work/browser28/
+work/analysis/
+work/rt/
+work/btest/
+*.o
+*.wasm
+*.obj
+*.a
+*.dylib
+*.so
+
+# ── Local deploy / tool state ────────────────────────────────────────────────
+**/.wrangler/
+work/web/web/dist/
+work/web/web/dist-dev/
+work/web/web/server-rs/target/
+
+# ── Logs, run captures, screenshots, autotest saves ──────────────────────────
+*.log
+work/run*.log
+work/save*/
+work/red.png
+work/*.png
+
+# ── Credentials / secrets (defense in depth — none are expected in-tree) ─────
+*.env
+.env*
+*secret*
+*credential*
+*.pem
+*.key
+r2-token*
+aws-creds*
+
+# ── OS / editor cruft ────────────────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+*.swp
+*~
+.idea/
+.vscode/
+
+# ── Nested sub-projects (their own git repos — kept separate) ────────────────
+/hp2wsfix/
+/nfsu1-recompiled/
+/nfsu1web/
+/nfsu2-web/
+/pcrecomp/

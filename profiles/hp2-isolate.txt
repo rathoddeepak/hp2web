@@ -1,0 +1,3 @@
+# Guest functions lifted into a shard of their own, so that every call to them crosses an object
+# boundary and a link-time --wrap (tools/step3_build.sh, runtime/hp2_overrides.c) catches all callers.
+0x005d8a00  EA task pump: yields to the other guest threads (busy-wait loops call it)
